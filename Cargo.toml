@@ -1,0 +1,15 @@
+[package]
+name = "brog_app"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4.9.0"
+diesel = { version = "2.2.4", features = ["mysql"] }
+diesel_migrations = { version = "2.0.0-rc.1" }
+jsonwebtoken = "9.3.0"
+serde_json = "1.0.128"
+
+[[bin]]
+name = "brog_app"
+path = "src/main.rs"
